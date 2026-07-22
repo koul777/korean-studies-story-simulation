@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Final hearing panel room</title>
+  <desc id="desc">A formal hearing chamber with a raised panel desk, witness table, projected evidence, and focused light.</desc>
+  <defs>
+    <radialGradient id="chamber" cx="50%" cy="36%" r="70%">
+      <stop offset="0" stop-color="#234a63"/>
+      <stop offset=".52" stop-color="#081b31"/>
+      <stop offset="1" stop-color="#020711"/>
+    </radialGradient>
+    <linearGradient id="desk" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#1d3f58"/>
+      <stop offset=".56" stop-color="#0d2239"/>
+      <stop offset="1" stop-color="#050d19"/>
+    </linearGradient>
+    <linearGradient id="goldEdge" x1="0" x2="1">
+      <stop offset="0" stop-color="#f0d06b" stop-opacity=".1"/>
+      <stop offset=".5" stop-color="#fff1ac" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#f0d06b" stop-opacity=".1"/>
+    </linearGradient>
+    <filter id="panelShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#000611" flood-opacity=".58"/>
+    </filter>
+    <pattern id="floorGrid" width="68" height="68" patternUnits="userSpaceOnUse">
+      <path d="M68 0H0v68" fill="none" stroke="#b9eaff" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#chamber)"/>
+  <path d="M0 628h1600v272H0Z" fill="#020814"/>
+  <path d="M0 628h1600v272H0Z" fill="url(#floorGrid)" opacity=".9"/>
+  <path d="M125 134h1350v494H125Z" fill="#030a16" opacity=".34"/>
+  <path d="M330 128h940v360H330Z" fill="#061626" stroke="#b9eaff" stroke-opacity=".18" stroke-width="2"/>
+  <path d="M366 168h868v276H366Z" fill="#0b2238" opacity=".9"/>
+  <path d="M408 214h784M408 266h784M408 318h784M408 370h784" stroke="#70eee6" stroke-opacity=".09" stroke-width="3"/>
+  <path d="M468 400c126-102 253-119 381-52 102 53 204 38 306-44" fill="none" stroke="#f0d06b" stroke-opacity=".55" stroke-width="5"/>
+  <circle cx="468" cy="400" r="10" fill="#f0d06b"/>
+  <circle cx="849" cy="348" r="10" fill="#70eee6"/>
+  <circle cx="1155" cy="304" r="10" fill="#ff715f"/>
+
+  <g opacity=".32">
+    <path d="M205 116 0 900h293L488 116Z" fill="#70eee6"/>
+    <path d="M1395 116 1112 116 1307 900h293Z" fill="#f0d06b"/>
+    <path d="M690 90 500 900h600L910 90Z" fill="#ffffff"/>
+  </g>
+
+  <g filter="url(#panelShadow)">
+    <path d="M275 493h1050l88 182H187Z" fill="url(#desk)" stroke="#f0d06b" stroke-opacity=".2" stroke-width="2"/>
+    <path d="M326 532h948l44 88H282Z" fill="#07182a" opacity=".8"/>
+    <path d="M350 493h900" stroke="url(#goldEdge)" stroke-width="5"/>
+    <rect x="390" y="433" width="190" height="86" rx="10" fill="#0b2136" stroke="#70eee6" stroke-opacity=".22"/>
+    <rect x="705" y="408" width="190" height="111" rx="10" fill="#0b2136" stroke="#f0d06b" stroke-opacity=".32"/>
+    <rect x="1020" y="433" width="190" height="86" rx="10" fill="#0b2136" stroke="#70eee6" stroke-opacity=".22"/>
+  </g>
+
+  <g fill="#eaf8ff" opacity=".84">
+    <circle cx="485" cy="472" r="19"/>
+    <circle cx="800" cy="448" r="22"/>
+    <circle cx="1115" cy="472" r="19"/>
+    <path d="M452 506h66l22 13H430Z"/>
+    <path d="M762 486h76l27 17H735Z"/>
+    <path d="M1082 506h66l22 13h-110Z"/>
+  </g>
+
+  <g filter="url(#panelShadow)">
+    <rect x="604" y="666" width="392" height="114" rx="14" fill="#07182a" stroke="#b9eaff" stroke-opacity=".2"/>
+    <rect x="637" y="692" width="326" height="28" rx="5" fill="#fff6d9" opacity=".86"/>
+    <rect x="637" y="735" width="246" height="13" rx="6" fill="#70eee6" opacity=".42"/>
+  </g>
+
+  <g opacity=".72">
+    <rect x="162" y="250" width="112" height="238" rx="14" fill="#041323" stroke="#70eee6" stroke-opacity=".18"/>
+    <rect x="1326" y="250" width="112" height="238" rx="14" fill="#041323" stroke="#70eee6" stroke-opacity=".18"/>
+    <path d="M184 305h68M184 352h48M184 399h68M1348 305h68M1348 352h48M1348 399h68" stroke="#f0d06b" stroke-opacity=".42" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <path d="M0 900 612 625h376l612 275Z" fill="#000" opacity=".22"/>
+  <path d="M0 0h1600v900H0Z" fill="#000" opacity=".12"/>
+</svg>

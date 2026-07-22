@@ -1,0 +1,761 @@
+{
+  "generatedAt": "2026-07-22T00:26:19.179Z",
+  "paths": [
+    {
+      "profile": "fact_order",
+      "ending": "end_order",
+      "endingType": "order",
+      "nodeCount": 62,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "evidenceCount": 5,
+      "stats": {
+        "insight": 9,
+        "empathy": 2,
+        "order": 9,
+        "bond": 0
+      },
+      "flags": {
+        "early_fact_path": true,
+        "panel_censure": true,
+        "summary_internal_notice": true,
+        "prebrief_record_chain": true,
+        "rumor_media_strategy": true,
+        "c7_cross_procedure_answer": true,
+        "verdict_censure": true
+      },
+      "routeScores": {
+        "orderRoute": 7,
+        "humanRoute": 0,
+        "balancedRoute": 1
+      },
+      "choices": [
+        {
+          "nodeId": "c1_case_intro",
+          "choiceId": "c1_case_intro:0",
+          "label": "로그를 먼저 정리한다",
+          "next": "c1_logs"
+        },
+        {
+          "nodeId": "c2_maze_split",
+          "choiceId": "c2_maze_split:0",
+          "label": "로그를 더 깊게 파고들어 시간축을 복원한다",
+          "next": "c2_log_node"
+        },
+        {
+          "nodeId": "c3_system_route",
+          "choiceId": "c3_system_route:0",
+          "label": "A를 먼저 따라 출입/승인 데이터부터 정리한다",
+          "next": "c3_system_route_a"
+        },
+        {
+          "nodeId": "c3_interview",
+          "choiceId": "c3_interview:0",
+          "label": "일정표의 공백이 왜 생겼는지부터 묻는다",
+          "next": "c3_interview_branch_a"
+        },
+        {
+          "nodeId": "c3_design_review",
+          "choiceId": "c3_design_time_axis",
+          "label": "시간축 정합을 우선한다",
+          "next": "c3_design_summary"
+        },
+        {
+          "nodeId": "c3_final",
+          "choiceId": "c3_final_strict_report",
+          "label": "시간-승인-증언 순으로 바로 정리된 보고서를 제출한다",
+          "next": "c4_return_fact_notice"
+        },
+        {
+          "nodeId": "c4_briefing",
+          "choiceId": "c4_briefing:0",
+          "label": "로그 정리 라인으로 전체 타임라인을 제시한다",
+          "next": "c4_log_room"
+        },
+        {
+          "nodeId": "c4_board_pre",
+          "choiceId": "c4_board_pre_procedure",
+          "label": "엄격한 절차에 따라 증거 정합부터 제시한다",
+          "next": "c4_hearing_prepare"
+        },
+        {
+          "nodeId": "c4_hearing_prepare",
+          "choiceId": "c4_hearing_reliability_order",
+          "label": "증거의 신뢰도 순으로 3단계 발표를 구성한다",
+          "next": "c4_hearing_evidence_order"
+        },
+        {
+          "nodeId": "c4_resolution",
+          "choiceId": "c4_resolution_strict",
+          "label": "절차 위주의 엄격 보고로 결론을 마무리한다",
+          "next": "c5_assembly_open"
+        },
+        {
+          "nodeId": "c5_draft_route",
+          "choiceId": "c5_draft_route:0",
+          "label": "증거 체인(카메라, 로그, 승인)을 중심으로 프레임 고정",
+          "next": "c5_evidence_bridge"
+        },
+        {
+          "nodeId": "c5_panel_plan",
+          "choiceId": "c5_panel_censure",
+          "label": "규정 조문으로 반박하고 즉시 결론을 유도",
+          "next": "c5_resolution_censure"
+        },
+        {
+          "nodeId": "c5_resolution_summary",
+          "choiceId": "c5_summary_internal_notice",
+          "label": "내부 공지로만 결론 확정",
+          "next": "c5_internal_notice"
+        },
+        {
+          "nodeId": "c6_data_review",
+          "choiceId": "c6_data_record_chain",
+          "label": "이중 기록이 맞는지 타임스탬프부터 검토",
+          "next": "c6_record_chain"
+        },
+        {
+          "nodeId": "c6_boarding_call",
+          "choiceId": "c6_call_media_strategy",
+          "label": "대외 브리핑은 기록 검증 순으로 진행",
+          "next": "c6_media_strategy"
+        },
+        {
+          "nodeId": "c7_panel_assembly",
+          "choiceId": "c7_panel_assembly:0",
+          "label": "핵심 근거 먼저 제시하고 순서 정리",
+          "next": "c7_core_testimony"
+        },
+        {
+          "nodeId": "c7_cross_question",
+          "choiceId": "c7_cross_procedure",
+          "label": "절차 준수와 기록 정합성을 우선",
+          "next": "c7_cross_procedure_answer"
+        },
+        {
+          "nodeId": "c7_final_resolution",
+          "choiceId": "c7_choice_censure",
+          "label": "결과 정합을 우선해 공식 결론 확정",
+          "next": "c7_verdict_censure"
+        }
+      ],
+      "nodes": [
+        "c1_open",
+        "c1_briefing",
+        "c1_case_intro",
+        "c1_logs",
+        "c1_mid_a",
+        "c1_mid_b",
+        "c1_transition_to_ch2",
+        "c2_arrival",
+        "c2_keeper",
+        "c2_maze_gate",
+        "c2_maze_split",
+        "c2_log_node",
+        "c2_log_detail",
+        "c2_log_crosscheck",
+        "c2_maze_gate_exit",
+        "c3_entry",
+        "c3_system",
+        "c3_system_route",
+        "c3_system_route_a",
+        "c3_system_route_a2",
+        "c3_interview",
+        "c3_interview_branch_a",
+        "c3_interview_follow_a",
+        "c3_design",
+        "c3_design_review",
+        "c3_design_summary",
+        "c3_final",
+        "c4_return_fact_notice",
+        "c4_return_notice",
+        "c4_arrive_night",
+        "c4_briefing",
+        "c4_log_room",
+        "c4_log_audit",
+        "c4_security_camera",
+        "c4_board_pre",
+        "c4_hearing_prepare",
+        "c4_hearing_evidence_order",
+        "c4_hearing_order",
+        "c4_resolution",
+        "c5_assembly_open",
+        "c5_draft_route",
+        "c5_evidence_bridge",
+        "c5_panel_plan",
+        "c5_resolution_censure",
+        "c5_resolution_summary",
+        "c5_internal_notice",
+        "c6_review_open",
+        "c6_data_review",
+        "c6_record_chain",
+        "c6_record_chain_prebrief",
+        "c6_boarding_call",
+        "c6_media_strategy",
+        "c6_rumor_control",
+        "c7_bridge_order",
+        "c7_prehearing",
+        "c7_panel_assembly",
+        "c7_core_testimony",
+        "c7_cross_question",
+        "c7_cross_procedure_answer",
+        "c7_final_resolution",
+        "c7_verdict_censure",
+        "end_order"
+      ]
+    },
+    {
+      "profile": "human_recovery",
+      "ending": "end_human",
+      "endingType": "human",
+      "nodeCount": 60,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "evidenceCount": 8,
+      "stats": {
+        "insight": 6,
+        "empathy": 9,
+        "order": 5,
+        "bond": 2
+      },
+      "flags": {
+        "early_human_path": true,
+        "early_balance_path": true,
+        "panel_reconciliation": true,
+        "summary_public_trust": true,
+        "prebrief_witness_circle": true,
+        "rumor_public_forum": true,
+        "c7_cross_recovery_answer": true,
+        "verdict_reconciliation": true
+      },
+      "routeScores": {
+        "orderRoute": 0,
+        "humanRoute": 8,
+        "balancedRoute": 1
+      },
+      "choices": [
+        {
+          "nodeId": "c1_case_intro",
+          "choiceId": "c1_case_intro:1",
+          "label": "직원 진술부터 확인한다",
+          "next": "c1_staff_intro"
+        },
+        {
+          "nodeId": "c2_maze_split",
+          "choiceId": "c2_maze_split:1",
+          "label": "지점표시를 다시 확인해 우회 경로를 고른다",
+          "next": "c2_waypoint"
+        },
+        {
+          "nodeId": "c3_system_route",
+          "choiceId": "c3_system_route:1",
+          "label": "B를 먼저 열고 예외 규정의 적용 범위를 재확인한다",
+          "next": "c3_system_route_b"
+        },
+        {
+          "nodeId": "c3_interview",
+          "choiceId": "c3_interview:1",
+          "label": "증거의 연결 고리를 다시 맞춘다",
+          "next": "c3_interview_branch_b"
+        },
+        {
+          "nodeId": "c3_design_review",
+          "choiceId": "c3_design_relation_axis",
+          "label": "인물 관계 정합을 우선한다",
+          "next": "c3_design_relation_summary"
+        },
+        {
+          "nodeId": "c3_final",
+          "choiceId": "c3_final_motive_report",
+          "label": "인물의 동기와 책임 구간을 먼저 강조한 완화안으로 제출한다",
+          "next": "c4_return_motive_notice"
+        },
+        {
+          "nodeId": "c4_briefing",
+          "choiceId": "c4_briefing:1",
+          "label": "감사 아카이브 라인으로 내부 대조표를 제시한다",
+          "next": "c4_audit_room"
+        },
+        {
+          "nodeId": "c4_board_pre",
+          "choiceId": "c4_board_pre_witness",
+          "label": "진술/증거 동시 제시 방식으로 간결하게 정리한다",
+          "next": "c4_witness_prepare"
+        },
+        {
+          "nodeId": "c4_witness_prepare",
+          "choiceId": "c4_witness_log_pair",
+          "label": "진술+로그를 병행해 상호보완 증거로 제시한다",
+          "next": "c4_witness_hybrid_conclusion"
+        },
+        {
+          "nodeId": "c4_resolution",
+          "choiceId": "c4_resolution_repair",
+          "label": "동선 정리의 실마리를 먼저 요약해 완화안 제안",
+          "next": "c5_public_floor"
+        },
+        {
+          "nodeId": "c5_panel_plan",
+          "choiceId": "c5_panel_reconciliation",
+          "label": "정서적 맥락을 짚어 완화 조항으로 신뢰 확보",
+          "next": "c5_resolution_reconciliation"
+        },
+        {
+          "nodeId": "c5_resolution_summary",
+          "choiceId": "c5_summary_public_trust",
+          "label": "대외 공개 범위를 함께 제시해 신뢰 회복",
+          "next": "c5_public_trust"
+        },
+        {
+          "nodeId": "c6_data_review",
+          "choiceId": "c6_data_witness_circle",
+          "label": "목격자 진술을 추가로 교차 검증",
+          "next": "c6_witness_circle"
+        },
+        {
+          "nodeId": "c6_boarding_call",
+          "choiceId": "c6_call_public_forum",
+          "label": "공개 포럼에서 이해관계자 질문 수렴",
+          "next": "c6_public_forum"
+        },
+        {
+          "nodeId": "c7_panel_assembly",
+          "choiceId": "c7_panel_assembly:1",
+          "label": "감사 기록을 항목별로 재진술",
+          "next": "c7_audit_statement"
+        },
+        {
+          "nodeId": "c7_cross_question",
+          "choiceId": "c7_cross_recovery",
+          "label": "공감적 정정 조항으로 신뢰 회복",
+          "next": "c7_cross_recovery_answer"
+        },
+        {
+          "nodeId": "c7_final_resolution",
+          "choiceId": "c7_choice_reconciliation",
+          "label": "유감 완화 조치까지 함께 제시",
+          "next": "c7_verdict_reconciliation"
+        }
+      ],
+      "nodes": [
+        "c1_open",
+        "c1_briefing",
+        "c1_case_intro",
+        "c1_staff_intro",
+        "c1_staff_b",
+        "c1_staff_c",
+        "c1_transition_to_ch2",
+        "c2_arrival",
+        "c2_keeper",
+        "c2_maze_gate",
+        "c2_maze_split",
+        "c2_waypoint",
+        "c2_waypoint_map",
+        "c2_waypoint_stack",
+        "c2_maze_gate_exit",
+        "c3_entry",
+        "c3_system",
+        "c3_system_route",
+        "c3_system_route_b",
+        "c3_system_route_b2",
+        "c3_interview",
+        "c3_interview_branch_b",
+        "c3_interview_follow_b",
+        "c3_design",
+        "c3_design_review",
+        "c3_design_relation_summary",
+        "c3_final",
+        "c4_return_motive_notice",
+        "c4_return_notice",
+        "c4_arrive_night",
+        "c4_briefing",
+        "c4_audit_room",
+        "c4_audit_gap",
+        "c4_audit_cross",
+        "c4_board_pre",
+        "c4_witness_prepare",
+        "c4_witness_hybrid_conclusion",
+        "c4_witness_conclusion",
+        "c4_resolution",
+        "c5_public_floor",
+        "c5_panel_plan",
+        "c5_resolution_reconciliation",
+        "c5_resolution_summary",
+        "c5_public_trust",
+        "c6_review_open",
+        "c6_data_review",
+        "c6_witness_circle",
+        "c6_witness_circle_prebrief",
+        "c6_boarding_call",
+        "c6_public_forum",
+        "c6_forum_rumor_control",
+        "c7_bridge_human",
+        "c7_prehearing",
+        "c7_panel_assembly",
+        "c7_audit_statement",
+        "c7_cross_question",
+        "c7_cross_recovery_answer",
+        "c7_final_resolution",
+        "c7_verdict_reconciliation",
+        "end_human"
+      ]
+    },
+    {
+      "profile": "balanced_reform",
+      "ending": "end_balanced",
+      "endingType": "balanced",
+      "nodeCount": 57,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "evidenceCount": 7,
+      "stats": {
+        "insight": 9,
+        "empathy": 9,
+        "order": 9,
+        "bond": 5
+      },
+      "flags": {
+        "early_human_path": true,
+        "early_balance_path": true,
+        "summary_followup_schedule": true,
+        "prebrief_rule_review": true,
+        "rumor_internal_discipline": true,
+        "c7_cross_summary_answer": true,
+        "verdict_reform": true
+      },
+      "routeScores": {
+        "orderRoute": 1,
+        "humanRoute": 1,
+        "balancedRoute": 6
+      },
+      "choices": [
+        {
+          "nodeId": "c1_case_intro",
+          "choiceId": "c1_case_intro:2",
+          "label": "규정부터 펼쳐 본다",
+          "next": "c1_rules"
+        },
+        {
+          "nodeId": "c2_maze_split",
+          "choiceId": "c2_maze_split:2",
+          "label": "보안 근무 기록을 확인해 경비 체계까지 추적한다",
+          "next": "c2_guard_shift"
+        },
+        {
+          "nodeId": "c3_system_route",
+          "choiceId": "c3_system_route:2",
+          "label": "C를 먼저 확인해 음성 식별 단서를 재확인한다",
+          "next": "c3_system_route_c"
+        },
+        {
+          "nodeId": "c3_interview",
+          "choiceId": "c3_interview:2",
+          "label": "직원 진술의 공통점과 차이를 비교한다",
+          "next": "c3_interview_branch_c"
+        },
+        {
+          "nodeId": "c3_design_review",
+          "choiceId": "c3_design_relation_axis",
+          "label": "인물 관계 정합을 우선한다",
+          "next": "c3_design_relation_summary"
+        },
+        {
+          "nodeId": "c3_final",
+          "choiceId": "c3_final_balanced_report",
+          "label": "규정, 진술, 로그를 3박자 동기화로 제시한다",
+          "next": "c4_return_balanced_notice"
+        },
+        {
+          "nodeId": "c4_briefing",
+          "choiceId": "c4_briefing:2",
+          "label": "진술 중심 라인으로 증인 기록을 먼저 제출한다",
+          "next": "c4_witness_room"
+        },
+        {
+          "nodeId": "c4_board_pre",
+          "choiceId": "c4_board_pre_public_risk",
+          "label": "대외 발표 문안처럼 압축해 영향과 위험도 우선 제시한다",
+          "next": "c4_press_plan"
+        },
+        {
+          "nodeId": "c4_press_plan",
+          "choiceId": "c4_press_repair_first",
+          "label": "감정적 피해 완화 조항을 먼저 제시한다",
+          "next": "c4_press_repair_review"
+        },
+        {
+          "nodeId": "c4_resolution",
+          "choiceId": "c4_resolution_balanced",
+          "label": "균형형 결론을 제출해 세 지표를 동시에 조정",
+          "next": "c5_final_conference"
+        },
+        {
+          "nodeId": "c5_resolution_summary",
+          "choiceId": "c5_summary_followup_schedule",
+          "label": "균형형 결론문을 남기고 추적 일정까지 동봉",
+          "next": "c5_followup_schedule"
+        },
+        {
+          "nodeId": "c6_data_review",
+          "choiceId": "c6_data_rule_review",
+          "label": "규정 조항대로 예외 요건을 점검",
+          "next": "c6_legal_consult"
+        },
+        {
+          "nodeId": "c6_boarding_call",
+          "choiceId": "c6_call_internal_discipline",
+          "label": "내부 점검팀에 긴급 점검 지시",
+          "next": "c6_internal_discipline"
+        },
+        {
+          "nodeId": "c7_panel_assembly",
+          "choiceId": "c7_panel_assembly:2",
+          "label": "전문가 의견을 연결해 제안 마무리",
+          "next": "c7_expert_input"
+        },
+        {
+          "nodeId": "c7_cross_question",
+          "choiceId": "c7_cross_summary",
+          "label": "근거를 결론 문장으로 한 번에 요약",
+          "next": "c7_cross_summary_answer"
+        },
+        {
+          "nodeId": "c7_final_resolution",
+          "choiceId": "c7_choice_reform",
+          "label": "중재형 결론으로 균형 있는 권고안 작성",
+          "next": "c7_verdict_reform"
+        }
+      ],
+      "nodes": [
+        "c1_open",
+        "c1_briefing",
+        "c1_case_intro",
+        "c1_rules",
+        "c1_rules_b",
+        "c1_transition_to_ch2",
+        "c2_arrival",
+        "c2_keeper",
+        "c2_maze_gate",
+        "c2_maze_split",
+        "c2_guard_shift",
+        "c2_guard_shift_notes",
+        "c2_guard_shift_interview",
+        "c2_maze_gate_exit",
+        "c3_entry",
+        "c3_system",
+        "c3_system_route",
+        "c3_system_route_c",
+        "c3_system_route_c2",
+        "c3_interview",
+        "c3_interview_branch_c",
+        "c3_interview_follow_c",
+        "c3_design",
+        "c3_design_review",
+        "c3_design_relation_summary",
+        "c3_final",
+        "c4_return_balanced_notice",
+        "c4_return_notice",
+        "c4_arrive_night",
+        "c4_briefing",
+        "c4_witness_room",
+        "c4_witness_interview",
+        "c4_witness_followup",
+        "c4_board_pre",
+        "c4_press_plan",
+        "c4_press_repair_review",
+        "c4_press_review",
+        "c4_resolution",
+        "c5_final_conference",
+        "c5_resolution_summary",
+        "c5_followup_schedule",
+        "c6_review_open",
+        "c6_data_review",
+        "c6_legal_consult",
+        "c6_legal_consult_prebrief",
+        "c6_boarding_call",
+        "c6_internal_discipline",
+        "c6_discipline_rumor_control",
+        "c7_bridge_balanced",
+        "c7_prehearing",
+        "c7_panel_assembly",
+        "c7_expert_input",
+        "c7_cross_question",
+        "c7_cross_summary_answer",
+        "c7_final_resolution",
+        "c7_verdict_reform",
+        "end_balanced"
+      ]
+    }
+  ],
+  "reachableEndings": {
+    "end_order": {
+      "endingType": "order",
+      "stats": {
+        "insight": 9,
+        "empathy": 3,
+        "order": 9,
+        "bond": 1
+      },
+      "evidenceCount": 5,
+      "flags": {
+        "early_fact_path": true,
+        "early_balance_path": true,
+        "summary_internal_notice": true,
+        "prebrief_record_chain": true,
+        "rumor_media_strategy": true,
+        "c7_cross_procedure_answer": true,
+        "verdict_censure": true
+      },
+      "routeScores": {
+        "orderRoute": 6,
+        "humanRoute": 0,
+        "balancedRoute": 2
+      },
+      "nodeCount": 57,
+      "choiceCount": 16
+    },
+    "end_balanced": {
+      "endingType": "balanced",
+      "stats": {
+        "insight": 9,
+        "empathy": 4,
+        "order": 9,
+        "bond": 2
+      },
+      "evidenceCount": 5,
+      "flags": {
+        "early_fact_path": true,
+        "early_balance_path": true,
+        "summary_internal_notice": true,
+        "prebrief_record_chain": true,
+        "rumor_media_strategy": true,
+        "c7_cross_procedure_answer": true,
+        "verdict_reform": true
+      },
+      "routeScores": {
+        "orderRoute": 4,
+        "humanRoute": 0,
+        "balancedRoute": 4
+      },
+      "nodeCount": 57,
+      "choiceCount": 16
+    },
+    "end_human": {
+      "endingType": "human",
+      "stats": {
+        "insight": 9,
+        "empathy": 8,
+        "order": 9,
+        "bond": 2
+      },
+      "evidenceCount": 7,
+      "flags": {
+        "early_fact_path": true,
+        "early_balance_path": true,
+        "summary_internal_notice": true,
+        "prebrief_record_chain": true,
+        "rumor_public_forum": true,
+        "c7_cross_recovery_answer": true,
+        "verdict_reconciliation": true
+      },
+      "routeScores": {
+        "orderRoute": 3,
+        "humanRoute": 4,
+        "balancedRoute": 1
+      },
+      "nodeCount": 57,
+      "choiceCount": 16
+    }
+  },
+  "summary": [
+    {
+      "profile": "fact_order",
+      "ending": "end_order",
+      "nodeCount": 62,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "choices": 18,
+      "evidenceCount": 5,
+      "routeScores": {
+        "orderRoute": 7,
+        "humanRoute": 0,
+        "balancedRoute": 1
+      }
+    },
+    {
+      "profile": "human_recovery",
+      "ending": "end_human",
+      "nodeCount": 60,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "choices": 17,
+      "evidenceCount": 8,
+      "routeScores": {
+        "orderRoute": 0,
+        "humanRoute": 8,
+        "balancedRoute": 1
+      }
+    },
+    {
+      "profile": "balanced_reform",
+      "ending": "end_balanced",
+      "nodeCount": 57,
+      "chapters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "choices": 16,
+      "evidenceCount": 7,
+      "routeScores": {
+        "orderRoute": 1,
+        "humanRoute": 1,
+        "balancedRoute": 6
+      }
+    }
+  ],
+  "reachableEndingIds": [
+    "end_balanced",
+    "end_human",
+    "end_order"
+  ]
+}

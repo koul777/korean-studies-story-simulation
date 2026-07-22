@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Security camera review room">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#06101f"/>
+      <stop offset=".5" stop-color="#183447"/>
+      <stop offset="1" stop-color="#050712"/>
+    </linearGradient>
+    <radialGradient id="scan" cx="50%" cy="46%" r="62%">
+      <stop offset="0" stop-color="#70eee6" stop-opacity=".28"/>
+      <stop offset=".44" stop-color="#70eee6" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#scan)"/>
+  <g transform="translate(170 120)" fill="#07111f" stroke="#dffcff" stroke-opacity=".16">
+    <rect width="380" height="225" rx="12"/>
+    <rect x="430" width="380" height="225" rx="12"/>
+    <rect x="860" width="380" height="225" rx="12"/>
+    <rect y="275" width="380" height="225" rx="12"/>
+    <rect x="430" y="275" width="380" height="225" rx="12"/>
+    <rect x="860" y="275" width="380" height="225" rx="12"/>
+  </g>
+  <g stroke="#70eee6" stroke-width="4" stroke-opacity=".36">
+    <path d="M205 285 L515 170"/><path d="M635 395 L900 225"/><path d="M1065 195 L1365 320"/>
+    <path d="M210 563 L500 695"/><path d="M635 580 L925 664"/><path d="M1070 690 L1360 540"/>
+  </g>
+  <g fill="#f1d16b" opacity=".75" font-family="Consolas, monospace" font-size="24">
+    <text x="215" y="170">CAM 01</text><text x="645" y="170">CAM 02</text><text x="1075" y="170">CAM 03</text>
+    <text x="215" y="445">CAM 04</text><text x="645" y="445">CAM 05</text><text x="1075" y="445">CAM 06</text>
+  </g>
+  <rect x="500" y="720" width="600" height="54" rx="27" fill="#0a1322" stroke="#f1d16b" stroke-opacity=".35"/>
+  <rect x="548" y="742" width="312" height="10" fill="#70eee6" opacity=".42"/>
+  <rect x="898" y="742" width="152" height="10" fill="#f1d16b" opacity=".5"/>
+</svg>

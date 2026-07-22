@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Order verdict record room">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#070b13"/>
+      <stop offset=".48" stop-color="#23344e"/>
+      <stop offset="1" stop-color="#15101a"/>
+    </linearGradient>
+    <radialGradient id="cold" cx="52%" cy="35%" r="58%">
+      <stop offset="0" stop-color="#dffcff" stop-opacity=".28"/>
+      <stop offset=".46" stop-color="#70eee6" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#cold)"/>
+  <g transform="translate(250 120)" opacity=".88">
+    <rect x="0" y="0" width="1100" height="650" rx="12" fill="#091322" stroke="#dffcff" stroke-opacity=".15"/>
+    <g fill="none" stroke="#f1d16b" stroke-opacity=".45" stroke-width="6">
+      <rect x="95" y="90" width="270" height="420"/>
+      <rect x="415" y="90" width="270" height="420"/>
+      <rect x="735" y="90" width="270" height="420"/>
+    </g>
+    <g fill="#dffcff" opacity=".24">
+      <rect x="135" y="150" width="190" height="12"/><rect x="135" y="195" width="150" height="10"/><rect x="135" y="240" width="172" height="10"/>
+      <rect x="455" y="150" width="190" height="12"/><rect x="455" y="195" width="150" height="10"/><rect x="455" y="240" width="172" height="10"/>
+      <rect x="775" y="150" width="190" height="12"/><rect x="775" y="195" width="150" height="10"/><rect x="775" y="240" width="172" height="10"/>
+    </g>
+    <path d="M130 570 H970" stroke="#70eee6" stroke-width="10" stroke-linecap="round" opacity=".42"/>
+  </g>
+</svg>

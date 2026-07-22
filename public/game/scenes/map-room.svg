@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Route map comparison room</title>
+  <desc id="desc">A room filled with route maps, waypoint pins, and crossing movement paths for comparing access routes.</desc>
+  <defs>
+    <radialGradient id="mapGlow" cx="50%" cy="40%" r="72%">
+      <stop offset="0" stop-color="#23516a"/>
+      <stop offset=".52" stop-color="#081d31"/>
+      <stop offset="1" stop-color="#020711"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#000611" flood-opacity=".52"/>
+    </filter>
+    <pattern id="mapGrid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0v50" fill="none" stroke="#70eee6" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#mapGlow)"/>
+  <rect width="1600" height="900" fill="url(#mapGrid)" opacity=".85"/>
+  <path d="M0 628h1600v272H0Z" fill="#020814"/>
+  <g filter="url(#shadow)">
+    <rect x="260" y="118" width="1080" height="570" rx="18" fill="#071827" stroke="#b9eaff" stroke-opacity=".2" stroke-width="2"/>
+    <rect x="314" y="168" width="972" height="420" rx="10" fill="#0d3149"/>
+    <path d="M390 514c132-230 276-304 432-220 122 66 232 27 333-110" fill="none" stroke="#f0d06b" stroke-width="7" stroke-linecap="round"/>
+    <path d="M416 238c112 138 236 198 372 180 160-21 276 40 348 182" fill="none" stroke="#70eee6" stroke-width="7" stroke-linecap="round"/>
+    <path d="M506 558c74-84 132-146 174-186 100-96 236-114 408-55" fill="none" stroke="#ff715f" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+    <g fill="#fff6d9">
+      <circle cx="390" cy="514" r="14"/>
+      <circle cx="822" cy="294" r="14"/>
+      <circle cx="1155" cy="184" r="14"/>
+      <circle cx="416" cy="238" r="14"/>
+      <circle cx="788" cy="418" r="14"/>
+      <circle cx="1136" cy="600" r="14"/>
+      <circle cx="680" cy="372" r="14"/>
+      <circle cx="1088" cy="317" r="14"/>
+    </g>
+    <g fill="#061727" opacity=".72">
+      <rect x="444" y="192" width="126" height="42" rx="6"/>
+      <rect x="918" y="224" width="148" height="42" rx="6"/>
+      <rect x="546" y="468" width="166" height="42" rx="6"/>
+      <rect x="1044" y="492" width="136" height="42" rx="6"/>
+    </g>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="596" y="642" width="408" height="92" rx="12" fill="#061827" stroke="#f0d06b" stroke-opacity=".22"/>
+    <path d="M634 678h332M634 708h236" stroke="#d5f6f0" stroke-opacity=".34" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <path d="M0 0h1600v900H0Z" fill="#000" opacity=".1"/>
+</svg>

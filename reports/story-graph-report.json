@@ -1,0 +1,240 @@
+{
+  "generatedAt": "2026-07-22T00:26:06.991Z",
+  "totals": {
+    "nodes": 125,
+    "choiceNodes": 20,
+    "endings": 3,
+    "collapsedChoiceNodes": 0,
+    "artKeysUsed": 15
+  },
+  "artCounts": {
+    "office_day": 5,
+    "server_room": 9,
+    "witness_room": 18,
+    "rule_archive": 15,
+    "forest_trace": 4,
+    "archive_village": 6,
+    "cctv_room": 4,
+    "forest_crossroads": 1,
+    "review_room": 9,
+    "verdict_human": 8,
+    "maze_core": 1,
+    "hearing_room": 20,
+    "public_forum": 12,
+    "verdict_balanced": 6,
+    "verdict_order": 7
+  },
+  "chapterCounts": {
+    "1": 12,
+    "2": 14,
+    "3": 21,
+    "4": 29,
+    "5": 15,
+    "6": 15,
+    "7": 19
+  },
+  "collapsedChoiceNodeIds": [],
+  "routeBridgeSources": [
+    "c6_rumor_control",
+    "c6_forum_rumor_control",
+    "c6_discipline_rumor_control"
+  ],
+  "branchingRows": [
+    {
+      "id": "c1_case_intro",
+      "chapter": 1,
+      "choices": 3,
+      "destinations": [
+        "c1_logs",
+        "c1_staff_intro",
+        "c1_rules"
+      ]
+    },
+    {
+      "id": "c2_maze_split",
+      "chapter": 2,
+      "choices": 3,
+      "destinations": [
+        "c2_log_node",
+        "c2_waypoint",
+        "c2_guard_shift"
+      ]
+    },
+    {
+      "id": "c3_system_route",
+      "chapter": 3,
+      "choices": 3,
+      "destinations": [
+        "c3_system_route_a",
+        "c3_system_route_b",
+        "c3_system_route_c"
+      ]
+    },
+    {
+      "id": "c3_interview",
+      "chapter": 3,
+      "choices": 3,
+      "destinations": [
+        "c3_interview_branch_a",
+        "c3_interview_branch_b",
+        "c3_interview_branch_c"
+      ]
+    },
+    {
+      "id": "c3_design_review",
+      "chapter": 3,
+      "choices": 2,
+      "destinations": [
+        "c3_design_summary",
+        "c3_design_relation_summary"
+      ]
+    },
+    {
+      "id": "c3_final",
+      "chapter": 3,
+      "choices": 3,
+      "destinations": [
+        "c4_return_fact_notice",
+        "c4_return_motive_notice",
+        "c4_return_balanced_notice"
+      ]
+    },
+    {
+      "id": "c4_briefing",
+      "chapter": 4,
+      "choices": 3,
+      "destinations": [
+        "c4_log_room",
+        "c4_audit_room",
+        "c4_witness_room"
+      ]
+    },
+    {
+      "id": "c4_board_pre",
+      "chapter": 4,
+      "choices": 3,
+      "destinations": [
+        "c4_hearing_prepare",
+        "c4_witness_prepare",
+        "c4_press_plan"
+      ]
+    },
+    {
+      "id": "c4_hearing_prepare",
+      "chapter": 4,
+      "choices": 2,
+      "destinations": [
+        "c4_hearing_evidence_order",
+        "c4_hearing_exception_order"
+      ]
+    },
+    {
+      "id": "c4_witness_prepare",
+      "chapter": 4,
+      "choices": 2,
+      "destinations": [
+        "c4_witness_trust_conclusion",
+        "c4_witness_hybrid_conclusion"
+      ]
+    },
+    {
+      "id": "c4_press_plan",
+      "chapter": 4,
+      "choices": 2,
+      "destinations": [
+        "c4_press_reform_review",
+        "c4_press_repair_review"
+      ]
+    },
+    {
+      "id": "c4_resolution",
+      "chapter": 4,
+      "choices": 3,
+      "destinations": [
+        "c5_assembly_open",
+        "c5_public_floor",
+        "c5_final_conference"
+      ]
+    },
+    {
+      "id": "c5_draft_route",
+      "chapter": 5,
+      "choices": 3,
+      "destinations": [
+        "c5_evidence_bridge",
+        "c5_cross_exam",
+        "c5_public_plan"
+      ]
+    },
+    {
+      "id": "c5_panel_plan",
+      "chapter": 5,
+      "choices": 3,
+      "destinations": [
+        "c5_resolution_censure",
+        "c5_resolution_reconciliation",
+        "c5_resolution_reform"
+      ]
+    },
+    {
+      "id": "c5_resolution_summary",
+      "chapter": 5,
+      "choices": 3,
+      "destinations": [
+        "c5_internal_notice",
+        "c5_public_trust",
+        "c5_followup_schedule"
+      ]
+    },
+    {
+      "id": "c6_data_review",
+      "chapter": 6,
+      "choices": 3,
+      "destinations": [
+        "c6_record_chain",
+        "c6_witness_circle",
+        "c6_legal_consult"
+      ]
+    },
+    {
+      "id": "c6_boarding_call",
+      "chapter": 6,
+      "choices": 3,
+      "destinations": [
+        "c6_media_strategy",
+        "c6_public_forum",
+        "c6_internal_discipline"
+      ]
+    },
+    {
+      "id": "c7_panel_assembly",
+      "chapter": 7,
+      "choices": 3,
+      "destinations": [
+        "c7_core_testimony",
+        "c7_audit_statement",
+        "c7_expert_input"
+      ]
+    },
+    {
+      "id": "c7_cross_question",
+      "chapter": 7,
+      "choices": 3,
+      "destinations": [
+        "c7_cross_procedure_answer",
+        "c7_cross_recovery_answer",
+        "c7_cross_summary_answer"
+      ]
+    },
+    {
+      "id": "c7_final_resolution",
+      "chapter": 7,
+      "choices": 3,
+      "destinations": [
+        "c7_verdict_censure",
+        "c7_verdict_reconciliation",
+        "c7_verdict_reform"
+      ]
+    }
+  ]
+}

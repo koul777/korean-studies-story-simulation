@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Reform blueprint studio</title>
+  <desc id="desc">A bright reform planning studio with process maps, blueprint tables, sticky notes, and future prevention routes.</desc>
+  <defs>
+    <radialGradient id="studio" cx="50%" cy="38%" r="72%">
+      <stop offset="0" stop-color="#235c72"/>
+      <stop offset=".5" stop-color="#092436"/>
+      <stop offset="1" stop-color="#020811"/>
+    </radialGradient>
+    <linearGradient id="blueprint" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0e4b68"/>
+      <stop offset=".52" stop-color="#0b304c"/>
+      <stop offset="1" stop-color="#071728"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#000611" flood-opacity=".5"/>
+    </filter>
+    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M46 0H0v46" fill="none" stroke="#70eee6" stroke-opacity=".09" stroke-width="1"/>
+      <path d="M23 0v46M0 23h46" fill="none" stroke="#70eee6" stroke-opacity=".035" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#studio)"/>
+  <rect width="1600" height="900" fill="url(#grid)" opacity=".88"/>
+  <path d="M0 620h1600v280H0Z" fill="#020814"/>
+  <path d="M0 620c266-80 520-72 762 23 232 91 496 62 838-92v349H0Z" fill="#061727" opacity=".68"/>
+
+  <g opacity=".3">
+    <path d="M270 84 0 900h325L585 84Z" fill="#70eee6"/>
+    <path d="M1330 84 1015 84l260 816h325Z" fill="#f0d06b"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="250" y="116" width="1100" height="384" rx="18" fill="url(#blueprint)" stroke="#b9eaff" stroke-opacity=".24" stroke-width="2"/>
+    <rect x="291" y="156" width="1018" height="304" rx="10" fill="#0a2f49" opacity=".9"/>
+    <path d="M340 236h220v-42h200v92h200v-48h280" fill="none" stroke="#70eee6" stroke-opacity=".6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M340 354h174v-56h206v96h238v-62h282" fill="none" stroke="#f0d06b" stroke-opacity=".62" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M340 410h900" stroke="#b9eaff" stroke-opacity=".18" stroke-width="3"/>
+    <g fill="#061727" stroke="#d5f6f0" stroke-opacity=".28" stroke-width="2">
+      <rect x="338" y="198" width="124" height="64" rx="8"/>
+      <rect x="604" y="164" width="124" height="64" rx="8"/>
+      <rect x="836" y="258" width="124" height="64" rx="8"/>
+      <rect x="1104" y="208" width="124" height="64" rx="8"/>
+      <rect x="432" y="320" width="124" height="64" rx="8"/>
+      <rect x="690" y="362" width="124" height="64" rx="8"/>
+      <rect x="976" y="300" width="124" height="64" rx="8"/>
+    </g>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <ellipse cx="800" cy="706" rx="430" ry="92" fill="#020711" opacity=".52"/>
+    <path d="M378 576h844l112 162H266Z" fill="#082138" stroke="#70eee6" stroke-opacity=".24" stroke-width="2"/>
+    <path d="M436 604h728l48 72H388Z" fill="#0b304c"/>
+    <rect x="610" y="526" width="380" height="138" rx="12" fill="#0e4b68" stroke="#d5f6f0" stroke-opacity=".22"/>
+    <path d="M648 558h304M648 596h214M648 632h266" stroke="#d5f6f0" stroke-opacity=".32" stroke-width="7" stroke-linecap="round"/>
+    <path d="M912 558v76M870 596h84" stroke="#f0d06b" stroke-opacity=".55" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="136" y="232" width="144" height="318" rx="16" fill="#071827" stroke="#70eee6" stroke-opacity=".22"/>
+    <rect x="163" y="268" width="88" height="54" rx="6" fill="#fff6d9"/>
+    <rect x="163" y="342" width="88" height="54" rx="6" fill="#d6fff3"/>
+    <rect x="163" y="416" width="88" height="54" rx="6" fill="#ffe0d7"/>
+    <path d="M180 294h54M180 368h54M180 442h54" stroke="#061727" stroke-opacity=".72" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <g opacity=".82">
+    <rect x="1330" y="238" width="122" height="300" rx="14" fill="#041323" stroke="#f0d06b" stroke-opacity=".2"/>
+    <path d="M1356 296h70M1356 340h48M1356 414h70M1356 458h58" stroke="#fff6d9" stroke-opacity=".3" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="1391" cy="500" r="20" fill="none" stroke="#70eee6" stroke-opacity=".48" stroke-width="4"/>
+  </g>
+
+  <path d="M0 0h1600v900H0Z" fill="#000" opacity=".1"/>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Live trace server room">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#061321"/>
+      <stop offset="0.48" stop-color="#123c4d"/>
+      <stop offset="1" stop-color="#020814"/>
+    </linearGradient>
+    <radialGradient id="pulse" cx="52%" cy="42%" r="58%">
+      <stop offset="0" stop-color="#8ff8e8" stop-opacity=".42"/>
+      <stop offset=".42" stop-color="#247d8d" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#020814" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#pulse)"/>
+  <g opacity=".7">
+    <path d="M100 710 C320 560 420 650 620 500 S970 250 1450 360" fill="none" stroke="#74f6eb" stroke-width="5" stroke-opacity=".55"/>
+    <path d="M90 770 C340 640 490 735 735 555 S1020 385 1500 470" fill="none" stroke="#ffd86d" stroke-width="3" stroke-opacity=".38"/>
+    <path d="M120 585 C350 520 610 420 820 440 S1150 570 1505 295" fill="none" stroke="#ff7669" stroke-width="3" stroke-opacity=".28"/>
+  </g>
+  <g transform="translate(115 150)" opacity=".92">
+    <rect width="315" height="540" rx="14" fill="#07111f" stroke="#79ecdf" stroke-opacity=".35"/>
+    <g fill="#10283c">
+      <rect x="28" y="34" width="259" height="54" rx="6"/>
+      <rect x="28" y="112" width="259" height="54" rx="6"/>
+      <rect x="28" y="190" width="259" height="54" rx="6"/>
+      <rect x="28" y="268" width="259" height="54" rx="6"/>
+      <rect x="28" y="346" width="259" height="54" rx="6"/>
+      <rect x="28" y="424" width="259" height="54" rx="6"/>
+    </g>
+    <g fill="#74f6eb" filter="url(#glow)">
+      <circle cx="62" cy="61" r="7"/><circle cx="62" cy="139" r="7"/><circle cx="62" cy="217" r="7"/>
+      <circle cx="62" cy="295" r="7"/><circle cx="62" cy="373" r="7"/><circle cx="62" cy="451" r="7"/>
+    </g>
+  </g>
+  <g transform="translate(1120 205)" opacity=".88">
+    <rect width="350" height="250" rx="10" fill="#091529" stroke="#ffd86d" stroke-opacity=".34"/>
+    <path d="M42 178 L110 120 L164 152 L230 76 L303 112" fill="none" stroke="#74f6eb" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#f4d56a"><rect x="40" y="42" width="92" height="10"/><rect x="40" y="62" width="178" height="8" opacity=".65"/><rect x="40" y="82" width="132" height="8" opacity=".45"/></g>
+  </g>
+  <g fill="#dffcff" opacity=".22" font-family="Consolas, monospace" font-size="28">
+    <text x="555" y="185">LOG TRACE 07:13</text>
+    <text x="730" y="735">ACCESS HASH MATCHED</text>
+  </g>
+</svg>

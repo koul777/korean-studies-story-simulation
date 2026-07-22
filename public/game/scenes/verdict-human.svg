@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Human-centered verdict table">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#121421"/>
+      <stop offset=".52" stop-color="#523849"/>
+      <stop offset="1" stop-color="#102d32"/>
+    </linearGradient>
+    <radialGradient id="warm" cx="48%" cy="38%" r="54%">
+      <stop offset="0" stop-color="#ffb8a9" stop-opacity=".42"/>
+      <stop offset=".48" stop-color="#ffd86d" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#warm)"/>
+  <g transform="translate(300 250)">
+    <path d="M120 380 C280 270 720 270 880 380 L820 470 H180 Z" fill="#11192a" stroke="#fff5df" stroke-opacity=".16"/>
+    <circle cx="280" cy="150" r="70" fill="#ff715f" opacity=".32"/>
+    <circle cx="720" cy="150" r="70" fill="#70eee6" opacity=".28"/>
+    <path d="M330 230 C425 305 575 305 670 230" fill="none" stroke="#f1d16b" stroke-width="14" stroke-linecap="round" opacity=".7"/>
+    <rect x="360" y="344" width="280" height="50" rx="25" fill="#fff5df" opacity=".18"/>
+  </g>
+  <g fill="#fff5df" opacity=".28" font-family="Consolas, monospace" font-size="26">
+    <text x="595" y="690">REPAIR NOTE ACCEPTED</text>
+  </g>
+</svg>
