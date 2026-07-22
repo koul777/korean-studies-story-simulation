@@ -148,10 +148,18 @@ const MENU_SCENE_MONTAGE = [
 
 const MENU_REFERENCE_BACKGROUND = "/game/reference/story-reference-1.jpg";
 
-const STATIC_CAST_IMAGES = {
-  harin: "/game/characters/character-sheet-1.jpg",
-  haechi: "/game/characters/character-sheet-2.jpg",
-} as const;
+const STATIC_CAST_IMAGES: Record<string, Record<string, string>> = {
+  harin: {
+    idle: "/game/characters/poses/harin-idle.png",
+    search: "/game/characters/poses/harin-search.png",
+    brief: "/game/characters/poses/harin-brief.png",
+  },
+  haechi: {
+    idle: "/game/characters/poses/haechi-idle.png",
+    low: "/game/characters/poses/haechi-low.png",
+    judge: "/game/characters/poses/haechi-judge.png",
+  },
+};
 
 type StoryGameProps = {
   initialScene?: string;
@@ -695,7 +703,7 @@ export default function StoryGame({ initialScene }: StoryGameProps) {
                     <span
                       key={cast.key}
                       className={`static-character-card ${cast.key} pose-${cast.variant} ${cast.focus ? "focus" : "support"}`}
-                      style={{ backgroundImage: `url(${STATIC_CAST_IMAGES[cast.key]})` }}
+                      style={{ backgroundImage: `url(${STATIC_CAST_IMAGES[cast.key][cast.variant]})` }}
                     >
                       <b>{cast.label}</b>
                     </span>

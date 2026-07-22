@@ -514,20 +514,25 @@ button { font: inherit; }
   width: clamp(112px, 11vw, 188px);
   height: clamp(150px, 20vh, 260px);
   overflow: hidden;
-  border: 1px solid rgba(255, 239, 181, 0.35);
-  border-radius: 18px 18px 7px 7px;
+  border: 0;
+  border-radius: 0;
   background-repeat: no-repeat;
-  background-color: rgba(2, 10, 24, 0.46);
-  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.36), inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  background-color: transparent;
+  box-shadow: none;
+  filter: drop-shadow(0 18px 22px rgba(0, 0, 0, 0.32));
   transform: none;
 }
 
-.static-character-card.harin.pose-idle { background-size: 265%; background-position: 8% 6%; }
-.static-character-card.harin.pose-search { background-size: 335%; background-position: 8% 72%; }
-.static-character-card.harin.pose-brief { background-size: 320%; background-position: 69% 47%; }
-.static-character-card.haechi.pose-idle { background-size: 245%; background-position: 7% 6%; }
-.static-character-card.haechi.pose-low { background-size: 320%; background-position: 54% 72%; }
-.static-character-card.haechi.pose-judge { background-size: 315%; background-position: 75% 44%; }
+.static-character-card.harin.pose-idle,
+.static-character-card.harin.pose-search,
+.static-character-card.harin.pose-brief,
+.static-character-card.haechi.pose-idle,
+.static-character-card.haechi.pose-low,
+.static-character-card.haechi.pose-judge {
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
 .static-character-card.support { opacity: 0.82; }
 .static-character-card.focus {
   width: clamp(136px, 13vw, 220px);
