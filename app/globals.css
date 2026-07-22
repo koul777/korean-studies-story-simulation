@@ -220,7 +220,7 @@ button { font: inherit; }
   width: min(740px, 58vw);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 3vh clamp(40px, 7vw, 132px) 4vh;
   background: linear-gradient(90deg, rgba(2, 8, 23, 0.98) 0, rgba(2, 8, 23, 0.91) 61%, rgba(2, 8, 23, 0) 100%);
 }
@@ -498,12 +498,12 @@ button { font: inherit; }
 .static-cast-layer {
   position: absolute;
   z-index: 3;
-  left: clamp(180px, 18vw, 330px);
-  right: clamp(110px, 12vw, 230px);
-  bottom: clamp(22px, 5vh, 54px);
+  left: clamp(160px, 17vw, 280px);
+  right: clamp(150px, 16vw, 240px);
+  bottom: clamp(78px, 12vh, 112px);
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-start;
   gap: clamp(16px, 3vw, 44px);
   pointer-events: none;
 }
@@ -511,6 +511,7 @@ button { font: inherit; }
 .static-character-card {
   position: relative;
   display: block;
+  flex: 0 0 auto;
   width: clamp(112px, 11vw, 188px);
   height: clamp(150px, 20vh, 260px);
   overflow: hidden;
