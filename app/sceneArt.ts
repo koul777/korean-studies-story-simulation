@@ -40,7 +40,7 @@ export type SceneArt = {
 export const SCENE_ART: Record<SceneArtKey, SceneArt> = {
   office_day: {
     id: "office_day",
-    image: "/game/scenes/office-briefing.svg",
+    image: "/game/scenes/generated/office-briefing.png",
     title: "이상 징후 브리핑룸",
     kicker: "HR INCIDENT ROOM",
     tone: "office",
@@ -49,7 +49,7 @@ export const SCENE_ART: Record<SceneArtKey, SceneArt> = {
   },
   server_room: {
     id: "server_room",
-    image: "/game/scenes/server-room.svg",
+    image: "/game/scenes/generated/server-room.png",
     title: "로그 추적 서버실",
     kicker: "LIVE TRACE",
     tone: "maze",
@@ -76,7 +76,7 @@ export const SCENE_ART: Record<SceneArtKey, SceneArt> = {
   },
   archive_log: {
     id: "archive_log",
-    image: "/game/scenes/archive-log.svg",
+    image: "/game/scenes/generated/archive-log.png",
     title: "과거 기록 보관소",
     kicker: "ARCHIVE LOG",
     tone: "archive",
@@ -112,7 +112,7 @@ export const SCENE_ART: Record<SceneArtKey, SceneArt> = {
   },
   hearing_room: {
     id: "hearing_room",
-    image: "/game/scenes/hearing-room.svg",
+    image: "/game/scenes/generated/hearing-room.png",
     title: "비공개 청문 준비실",
     kicker: "HEARING ROOM",
     tone: "hearing",
@@ -130,7 +130,7 @@ export const SCENE_ART: Record<SceneArtKey, SceneArt> = {
   },
   public_forum: {
     id: "public_forum",
-    image: "/game/scenes/public-forum.svg",
+    image: "/game/scenes/generated/public-forum.png",
     title: "공개 심의 포럼",
     kicker: "PUBLIC FORUM",
     tone: "public",
@@ -157,7 +157,7 @@ export const SCENE_ART: Record<SceneArtKey, SceneArt> = {
   },
   cctv_room: {
     id: "cctv_room",
-    image: "/game/scenes/cctv-room.svg",
+    image: "/game/scenes/generated/cctv-room.png",
     title: "보안 카메라 검토실",
     kicker: "CCTV REVIEW",
     tone: "hearing",
@@ -175,7 +175,7 @@ export const SCENE_ART: Record<SceneArtKey, SceneArt> = {
   },
   witness_room: {
     id: "witness_room",
-    image: "/game/scenes/witness-room.svg",
+    image: "/game/scenes/generated/witness-room.png",
     title: "목격자 조정실",
     kicker: "WITNESS ROOM",
     tone: "archive",
@@ -238,7 +238,7 @@ export const SCENE_ART: Record<SceneArtKey, SceneArt> = {
   },
   reform_blueprint: {
     id: "reform_blueprint",
-    image: "/game/scenes/reform-blueprint.svg",
+    image: "/game/scenes/generated/reform-blueprint.png",
     title: "재발방지 설계실",
     kicker: "REFORM BLUEPRINT",
     tone: "public",

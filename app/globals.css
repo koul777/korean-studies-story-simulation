@@ -455,7 +455,7 @@ button { font: inherit; }
 .scene-illustration {
   position: absolute;
   z-index: 5;
-  inset: 84px clamp(12px, 7vw, 96px) 202px;
+  inset: 84px 0 202px;
   display: grid;
   place-items: center;
   pointer-events: none;
@@ -463,14 +463,14 @@ button { font: inherit; }
 
 .scene-art-frame {
   position: relative;
-  width: min(76vw, 1180px);
+  width: 100%;
   height: 100%;
   min-height: 310px;
   overflow: hidden;
-  border: 1px solid rgba(231, 244, 255, 0.2);
-  border-radius: 8px 30px 8px 8px;
-  background: rgba(3, 14, 34, 0.5);
-  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.42), inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   animation: none;
 }
 
@@ -480,9 +480,7 @@ button { font: inherit; }
   inset: 0;
   z-index: 2;
   pointer-events: none;
-  background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.08), transparent 16%, transparent 84%, rgba(255, 255, 255, 0.06)),
-    repeating-linear-gradient(0deg, rgba(255,255,255,.035) 0 1px, transparent 1px 18px);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.025), transparent 18%, transparent 82%, rgba(255, 255, 255, 0.02));
   mix-blend-mode: soft-light;
 }
 
@@ -491,8 +489,8 @@ button { font: inherit; }
   inset: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: saturate(1.03) contrast(1.04) brightness(0.9);
-  transform: scale(1.012);
+  filter: saturate(1.02) contrast(1.02) brightness(0.96);
+  transform: none;
 }
 
 .static-cast-layer {
@@ -559,8 +557,8 @@ button { font: inherit; }
   inset: 0;
   z-index: 4;
   background:
-    linear-gradient(90deg, rgba(2, 9, 24, 0.58) 0, rgba(2, 9, 24, 0.1) 45%, rgba(2, 9, 24, 0.64) 100%),
-    linear-gradient(0deg, rgba(2, 9, 24, 0.68) 0, transparent 44%, rgba(2, 9, 24, 0.18) 100%);
+    linear-gradient(90deg, rgba(2, 9, 24, 0.38) 0, rgba(2, 9, 24, 0.04) 45%, rgba(2, 9, 24, 0.42) 100%),
+    linear-gradient(0deg, rgba(2, 9, 24, 0.42) 0, transparent 44%, rgba(2, 9, 24, 0.08) 100%);
 }
 
 .scene-art-caption {
