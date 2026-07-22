@@ -196,6 +196,45 @@ function resolveSceneClassKey(node: StoryNode, sceneArtId: string) {
   return normalizeCaptureSceneKey(backgroundKey || sceneArtId || node.scene);
 }
 
+const STATIC_SCENE_POSES: Record<string, {
+  harin: "idle" | "search" | "brief";
+  haechi: "idle" | "low" | "judge";
+}> = {
+  "server-room": { harin: "search", haechi: "judge" },
+  "cctv-room": { harin: "search", haechi: "judge" },
+  "witness-room": { harin: "brief", haechi: "low" },
+  village: { harin: "idle", haechi: "low" },
+  "forest-crossroads": { harin: "search", haechi: "low" },
+  "archive-log": { harin: "search", haechi: "low" },
+  "rule-archive": { harin: "search", haechi: "judge" },
+  "map-room": { harin: "search", haechi: "idle" },
+  "evidence-board": { harin: "search", haechi: "judge" },
+  "guard-post": { harin: "brief", haechi: "judge" },
+  "hearing-room": { harin: "brief", haechi: "judge" },
+  "panel-room": { harin: "brief", haechi: "judge" },
+  "censure-chamber": { harin: "brief", haechi: "judge" },
+  "reconciliation-desk": { harin: "idle", haechi: "low" },
+  "reform-blueprint": { harin: "search", haechi: "judge" },
+  "public-forum": { harin: "brief", haechi: "idle" },
+  office: { harin: "idle", haechi: "idle" },
+};
+
+function resolveContextualStaticCast(node: StoryNode, mode: Mode) {
+  const cast = resolveStaticCast(node, mode);
+  if (mode === "menu" || cast.length === 0) return cast;
+
+  const sceneKey = normalizeCaptureSceneKey(
+    (node as StoryNode & { backgroundKey?: string }).backgroundKey || node.scene,
+  );
+  const scenePose = STATIC_SCENE_POSES[sceneKey];
+  if (!scenePose) return cast;
+
+  return cast.map((character) => ({
+    ...character,
+    variant: character.key === "harin" ? scenePose.harin : scenePose.haechi,
+  }));
+}
+
 function resolveStaticCast(node: StoryNode, mode: Mode) {
   if (mode !== "play") return [];
 
@@ -528,7 +567,7 @@ export default function StoryGame({ initialScene }: StoryGameProps) {
   const sceneArt = useMemo(() => resolveSceneArt(node, mode), [node, mode]);
   const sceneClassKey = resolveSceneClassKey(node, sceneArt.id);
   const sceneBackgroundImage = mode === "menu" ? MENU_REFERENCE_BACKGROUND : sceneArt.image;
-  const staticCast = useMemo(() => resolveStaticCast(node, mode), [node, mode]);
+  const staticCast = useMemo(() => resolveContextualStaticCast(node, mode), [node, mode]);
   const routeScores = useMemo(() => getRouteFlagScores(flags), [flags]);
   const routeSignals = ROUTE_SIGNAL_META.map((signal) => ({ ...signal, value: routeScores[signal.key] }));
   const routeEcho = node.chapter >= 3 ? (() => {
