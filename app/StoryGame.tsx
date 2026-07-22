@@ -375,6 +375,9 @@ export default function StoryGame({ initialScene }: StoryGameProps) {
   const [captureMode, setCaptureMode] = useState(initialCaptureMode);
   const [soundOn, setSoundOn] = useState(true);
   const [toast, setToast] = useState<string | null>(null);
+  const [openingVisible, setOpeningVisible] = useState(() => !initialCaptureMode);
+  const [openingMuted, setOpeningMuted] = useState(true);
+  const openingVideoRef = useRef<HTMLVideoElement | null>(null);
   const previousChapter = useRef(STORY[initialNodeId].chapter);
   const audioRef = useRef<AudioContext | null>(null);
   const node = STORY[nodeId];
@@ -385,6 +388,7 @@ export default function StoryGame({ initialScene }: StoryGameProps) {
     const capture = params.get("scene");
     const captureNodeId = resolveCaptureNodeId(capture);
     if (captureNodeId) {
+      setOpeningVisible(false);
       setCaptureMode(true);
       setNodeId(captureNodeId);
       setStats({ ...CAPTURE_STATS });
@@ -616,6 +620,45 @@ export default function StoryGame({ initialScene }: StoryGameProps) {
       chapter: visitedNode?.chapter,
     };
   });
+
+  const closeOpening = () => setOpeningVisible(false);
+  const toggleOpeningSound = () => {
+    const video = openingVideoRef.current;
+    if (!video) return;
+    video.muted = !video.muted;
+    setOpeningMuted(video.muted);
+  };
+
+  if (openingVisible) {
+    return (
+      <main className="opening-screen">
+        <video
+          ref={openingVideoRef}
+          className="opening-video"
+          src="/game/opening.mp4"
+          autoPlay
+          muted={openingMuted}
+          playsInline
+          onEnded={closeOpening}
+          aria-label="한국학 인사팀의 이상한 모험 오프닝 영상"
+        />
+        <div className="opening-screen-shade" />
+        <section className="opening-ui" aria-label="오프닝 영상 메뉴">
+          <div className="opening-kicker">KOREAN STUDIES STORY</div>
+          <h1>한국학 인사팀의<br /><em>이상한 모험</em></h1>
+          <p>기록이 흔들린 밤, 첫 번째 선택이 시작된다.</p>
+          <div className="opening-actions">
+            <button type="button" className="opening-sound-button" onClick={toggleOpeningSound}>
+              {openingMuted ? "소리 켜기" : "소리 끄기"}
+            </button>
+            <button type="button" className="opening-skip-button" onClick={closeOpening}>
+              건너뛰고 시작하기 <span>SKIP OPENING</span>
+            </button>
+          </div>
+        </section>
+      </main>
+    );
+  }
 
   return (
     <main className={`story-game mode-${mode} scene-${sceneClassKey} story-scene-${node.scene} art-${sceneArt.id} tone-${sceneArt.tone} chapter-${node.chapter} ${node.choices && textComplete ? "has-choices" : ""}`}>
