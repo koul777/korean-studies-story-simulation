@@ -103,7 +103,7 @@ export const SCENE_ART: Record<SceneArtKey, SceneArt> = {
   },
   maze_core: {
     id: "maze_core",
-    image: "/game/scenes/regulation-labyrinth.svg",
+    image: "/game/scenes/generated/regulation-labyrinth.png",
     title: "규정의 미로 핵심부",
     kicker: "RULE MAZE",
     tone: "maze",
@@ -148,7 +148,7 @@ export const SCENE_ART: Record<SceneArtKey, SceneArt> = {
   },
   evidence_board: {
     id: "evidence_board",
-    image: "/game/scenes/evidence-board.svg",
+    image: "/game/scenes/generated/evidence-board.png",
     title: "증거 연결 보드",
     kicker: "EVIDENCE BOARD",
     tone: "hearing",
@@ -220,7 +220,7 @@ export const SCENE_ART: Record<SceneArtKey, SceneArt> = {
   },
   reconciliation_desk: {
     id: "reconciliation_desk",
-    image: "/game/scenes/reconciliation-desk.svg",
+    image: "/game/scenes/generated/reconciliation-desk.png",
     title: "회복 조정 테이블",
     kicker: "RECOVERY DESK",
     tone: "verdict",
@@ -229,7 +229,7 @@ export const SCENE_ART: Record<SceneArtKey, SceneArt> = {
   },
   censure_chamber: {
     id: "censure_chamber",
-    image: "/game/scenes/censure-chamber.svg",
+    image: "/game/scenes/generated/censure-chamber.png",
     title: "절차 문책 심의실",
     kicker: "CENSURE CHAMBER",
     tone: "hearing",
