@@ -65,3 +65,24 @@ npm run lint
 ## 공개 전 주의
 
 이 저장소에는 제공된 캐릭터 시트와 참고 이미지가 포함됩니다. public GitHub 저장소로 푸쉬하면 해당 이미지도 공개됩니다.
+
+## Visual direction update
+
+The story scenes now use illustrated, location-specific backgrounds instead of abstract UI panels. Character sprites are transparent, static cutouts staged in front of the scene so each beat reads as a deliberate story pose rather than continuous motion.
+
+### Scene background set
+
+- `office-briefing.png`: initial anomaly briefing room
+- `server-room.png`: log tracing server room
+- `witness-room.png`: witness coordination room
+- `archive-log.png`: archive record room
+- `hearing-room.png`: hearing and review room
+- `public-forum.png`: public cultural forum courtyard
+- `reform-blueprint.png`: reform planning studio
+- `cctv-room.png`: CCTV control room
+- `evidence-board.png`: connected evidence board room
+- `regulation-labyrinth.png`: regulation archive maze
+- `reconciliation-desk.png`: restorative counseling desk
+- `censure-chamber.png`: procedural review chamber
+
+The original SVG scene files remain available as fallbacks. The current visual pass is published on `main` with full-bleed compositing, calmer lower dialogue space, and a reserved right-middle area for choices.
